@@ -5,8 +5,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var weapenConfig = [
-    { basicattack: 100, strength: 100, agility: 100, intelligence: 100, enduranceefence: 100 },
-    { basicattack: 200, strength: 200, agility: 200, intelligence: 200, enduranceefence: 200 }
+    { basicattack: 100, strength: 100, agility: 100, intelligence: 100, endurance: 100, enhance: 1 },
+    { basicattack: 200, strength: 200, agility: 200, intelligence: 200, endurance: 200, enhance: 1.2 }
 ];
 var Weapen = (function () {
     function Weapen(type) {
@@ -37,11 +37,12 @@ var Weapen = (function () {
                 return desc;
             }
         };
-        this.basicattack = gemConfig[type].basicattack;
-        this.strength = gemConfig[type].strength;
-        this.agility = gemConfig[type].agility;
-        this.intelligence = gemConfig[type].intelligence;
-        this.endurance = gemConfig[type].enduranceefence;
+        this.basicattack = weapenConfig[type].basicattack;
+        this.enhance = weapenConfig[type].enhance;
+        this.strength = weapenConfig[type].strength;
+        this.agility = weapenConfig[type].agility;
+        this.intelligence = weapenConfig[type].intelligence;
+        this.endurance = weapenConfig[type].endurance;
     }
     var d = __define,c=Weapen,p=c.prototype;
     d(p, "attack"

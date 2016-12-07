@@ -5,8 +5,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var gemConfig = [
-    { basicattack: 10, strength: 10, agility: 10, intelligence: 10, enduranceefence: 10 },
-    { basicattack: 20, strength: 20, agility: 20, intelligence: 20, enduranceefence: 20 }
+    { basicattack: 10, strength: 10, agility: 10, intelligence: 10, endurance: 10 },
+    { basicattack: 20, strength: 20, agility: 20, intelligence: 20, endurance: 20 }
 ];
 var Gem = (function () {
     function Gem(type) {
@@ -40,7 +40,7 @@ var Gem = (function () {
         this.strength = gemConfig[type].strength;
         this.agility = gemConfig[type].agility;
         this.intelligence = gemConfig[type].intelligence;
-        this.endurance = gemConfig[type].enduranceefence;
+        this.endurance = gemConfig[type].endurance;
     }
     var d = __define,c=Gem,p=c.prototype;
     p.setEnhance = function (enhance) {

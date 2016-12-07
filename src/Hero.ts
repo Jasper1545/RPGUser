@@ -1,7 +1,7 @@
 var heroConfig = [
 
-	{basicattack:1.2,strength:1.5,agility:1.2,intelligence:1,enduranceefence:1.2},
-	{basicattack:1.5,strength:1,agility:1,intelligence:4,enduranceefence:0.7}
+	{basicattack:1.2,strength:1.5,agility:1.2,intelligence:1,endurance:1.2},
+	{basicattack:1.5,strength:1,agility:1,intelligence:4,endurance:0.7}
 
 ]
 
@@ -27,7 +27,7 @@ class Hero {
 		this.strFactor = heroConfig[type].strength;
 		this.agiFactor = heroConfig[type].agility;
 		this.intFactor = heroConfig[type].intelligence;
-		this.endFactor = heroConfig[type].enduranceefence;
+		this.endFactor = heroConfig[type].endurance;
 
 	}
 
@@ -49,7 +49,7 @@ class Hero {
 		return this.level * 10 * this.endurance;
 	}
 
-	@this.maxhpCacheCache
+	@this.maxmpCache
 	get maxmp():number {
 		return this.level * 10 * this.intelligence;
 	}

@@ -1,7 +1,7 @@
 var gemConfig = [
 
-	{basicattack:10,strength:10,agility:10,intelligence:10,enduranceefence:10},
-	{basicattack:20,strength:20,agility:20,intelligence:20,enduranceefence:20}
+	{basicattack:10,strength:10,agility:10,intelligence:10,endurance:10,enhance:1},
+	{basicattack:20,strength:20,agility:20,intelligence:20,endurance:20,enhance:1.2}
 
 ]
 
@@ -24,11 +24,12 @@ class Gem {
 	public constructor(type:number) {
 
 		this.basicattack = gemConfig[type].basicattack;
+		this.enhance = gemConfig[type].enhance;
 
 		this.strength = gemConfig[type].strength
 		this.agility = gemConfig[type].agility;
 		this.intelligence = gemConfig[type].intelligence;
-		this.endurance = gemConfig[type].enduranceefence;
+		this.endurance = gemConfig[type].endurance;
 
 	}
 

@@ -5,8 +5,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var heroConfig = [
-    { basicattack: 1.2, strength: 1.5, agility: 1.2, intelligence: 1, enduranceefence: 1.2 },
-    { basicattack: 1.5, strength: 1, agility: 1, intelligence: 4, enduranceefence: 0.7 }
+    { basicattack: 1.2, strength: 1.5, agility: 1.2, intelligence: 1, endurance: 1.2 },
+    { basicattack: 1.5, strength: 1, agility: 1, intelligence: 4, endurance: 0.7 }
 ];
 var Hero = (function () {
     function Hero(type) {
@@ -114,7 +114,7 @@ var Hero = (function () {
         this.strFactor = heroConfig[type].strength;
         this.agiFactor = heroConfig[type].agility;
         this.intFactor = heroConfig[type].intelligence;
-        this.endFactor = heroConfig[type].enduranceefence;
+        this.endFactor = heroConfig[type].endurance;
     }
     var d = __define,c=Hero,p=c.prototype;
     p.setInTeam = function (status) {
@@ -183,7 +183,7 @@ var Hero = (function () {
         this.maxhpCache
     ], p, "maxhp", null);
     __decorate([
-        this.maxhpCacheCache
+        this.maxmpCache
     ], p, "maxmp", null);
     __decorate([
         this.defenceCacheCache
